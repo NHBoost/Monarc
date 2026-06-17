@@ -749,6 +749,10 @@ body {
   }
   .burger {
     display: flex;
+    order: -1;
+  }
+  .brand {
+    margin-right: auto;
   }
 }
 @media (max-width: 560px) {

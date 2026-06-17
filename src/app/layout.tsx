@@ -23,17 +23,55 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const SITE_URL = "https://monarc.agency";
+const TITLE = "Monarc Agency — Agence digitale premium · Stratégie & croissance";
+const DESCRIPTION =
+  "Monarc Agency est l'agence digitale premium qui transforme votre visibilité en croissance : stratégie, acquisition, conversion et création de contenu pour les marques ambitieuses.";
+
 export const metadata: Metadata = {
-  title: "MONARC — Premium Digital Agency",
-  description:
-    "MONARC Agency — agence digitale premium dédiée à la stratégie, la visibilité, l'acquisition et la conversion pour les entreprises ambitieuses.",
-  metadataBase: new URL("https://monarc.agency"),
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    template: "%s · Monarc Agency",
+  },
+  description: DESCRIPTION,
+  keywords: [
+    "Monarc Agency",
+    "agence digitale",
+    "agence marketing digital",
+    "stratégie digitale",
+    "acquisition client",
+    "Google Ads",
+    "Meta Ads",
+    "création de site web",
+    "Paris",
+  ],
+  authors: [{ name: "Monarc Agency" }],
+  creator: "Monarc Agency",
+  publisher: "Monarc Agency",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "MONARC — Premium Digital Agency",
-    description:
-      "Agence digitale premium dédiée à la stratégie, la visibilité, l'acquisition et la conversion.",
     type: "website",
     locale: "fr_FR",
+    url: SITE_URL,
+    siteName: "Monarc Agency",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
