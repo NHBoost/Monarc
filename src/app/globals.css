@@ -143,8 +143,8 @@ body {
   flex-shrink: 0;
 }
 .brand-mark {
-  width: 40px;
-  height: 46px;
+  width: clamp(34px, 3.2vw, 40px);
+  height: clamp(38px, 3.6vw, 46px);
   flex-shrink: 0;
   background: url("/assets/monarc-emblem.png") center / contain no-repeat;
   -webkit-mask: radial-gradient(ellipse 62% 66% at 50% 50%, #000 60%, transparent 92%);
@@ -170,7 +170,7 @@ body {
 .brand-word b {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 21px;
+  font-size: clamp(17px, 1.6vw, 21px);
   letter-spacing: 0.16em;
   padding-left: 0.16em;
   padding-right: 0.16em;
@@ -417,7 +417,7 @@ body {
   font-family: var(--title-font);
   font-weight: var(--title-weight);
   font-style: var(--title-style);
-  font-size: 50px;
+  font-size: clamp(32px, 6.4vw, 56px);
   line-height: 1.04;
   letter-spacing: -0.015em;
   margin: 0;
@@ -777,7 +777,7 @@ body {
 /* ============================================================ SECTIONS */
 .section {
   position: relative;
-  padding-block: 40px;
+  padding-block: clamp(28px, 4.5vw, 56px);
 }
 .section.alt::before {
   content: "";
@@ -1025,7 +1025,7 @@ body {
 }
 .about-badge b {
   font-family: var(--serif);
-  font-size: 30px;
+  font-size: clamp(22px, 2.4vw, 30px);
   display: block;
   line-height: 1;
 }
@@ -1148,15 +1148,15 @@ body {
 .step .dot {
   position: relative;
   z-index: 1;
-  width: 54px;
-  height: 54px;
+  width: clamp(46px, 4.2vw, 54px);
+  height: clamp(46px, 4.2vw, 54px);
   border-radius: 50%;
   display: grid;
   place-items: center;
   background: var(--graphite);
   border: 1px solid var(--line);
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: clamp(18px, 1.8vw, 22px);
   color: var(--violet-light);
   margin-bottom: 24px;
   box-shadow: 0 0 30px color-mix(in oklab, var(--accent), transparent 84%);
@@ -1164,7 +1164,7 @@ body {
 .step h4 {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 21px;
+  font-size: clamp(18px, 1.7vw, 22px);
   margin: 0 0 9px;
 }
 .step p {
@@ -1189,7 +1189,7 @@ body {
 }
 .case-client {
   font-family: var(--serif);
-  font-size: 23px;
+  font-size: clamp(19px, 1.9vw, 23px);
   font-weight: 600;
   letter-spacing: -0.01em;
 }
@@ -1276,8 +1276,8 @@ body {
   margin-top: auto;
 }
 .tperson .avatar {
-  width: 50px;
-  height: 50px;
+  width: clamp(42px, 4vw, 50px);
+  height: clamp(42px, 4vw, 50px);
   border-radius: 50%;
   flex-shrink: 0;
   border: 1px solid var(--line);
@@ -1285,7 +1285,7 @@ body {
   display: grid;
   place-items: center;
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: clamp(15px, 1.4vw, 18px);
   color: var(--white);
 }
 .tperson b {
@@ -1493,7 +1493,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--line);
-  height: 200px;
+  height: clamp(160px, 26vh, 220px);
   position: relative;
   background: var(--graphite);
 }
@@ -1631,5 +1631,249 @@ body {
   }
   .case-row .k {
     padding-top: 0;
+  }
+}
+
+/* ============================================================
+   Tablet portrait / mobile-large
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --pad: clamp(16px, 5vw, 28px);
+  }
+  .nav-inner {
+    gap: 14px;
+    padding-block: 14px;
+  }
+  .nav.scrolled .nav-inner {
+    padding-block: 10px;
+  }
+
+  .hero {
+    padding-top: clamp(96px, 14vh, 140px);
+    padding-bottom: clamp(28px, 5vh, 56px);
+  }
+  .eyebrow {
+    white-space: normal;
+    font-size: 11px;
+    padding: 7px 14px;
+    letter-spacing: 0.24em;
+  }
+  .hero-grid {
+    margin-top: 22px;
+    gap: 28px;
+  }
+  .hero-actions {
+    margin-top: 24px;
+    gap: 10px;
+    width: 100%;
+  }
+  .hero-actions .btn,
+  .hero-actions .btn-lg {
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 14px;
+  }
+  .lede {
+    margin-bottom: 22px;
+  }
+
+  .visual {
+    margin-top: 32px;
+  }
+  .visual-tag {
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    gap: 7px;
+    left: 14px;
+    bottom: 14px;
+  }
+
+  .sec-head {
+    margin-bottom: 32px;
+  }
+  .eyebrow-2 {
+    margin-bottom: 16px;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+  }
+  .sec-sub {
+    margin-top: 16px;
+  }
+
+  .card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+  .ico {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+  }
+  .ico svg {
+    width: 22px;
+    height: 22px;
+  }
+  .card-h {
+    margin: 16px 0 8px;
+  }
+  .val-n {
+    top: 16px;
+    right: 18px;
+    font-size: 26px;
+  }
+
+  .chip {
+    padding: 10px 14px;
+    font-size: 13.5px;
+  }
+
+  .about-quote {
+    padding-left: 16px;
+  }
+  .about-badge {
+    left: 14px;
+    bottom: 14px;
+    padding: 12px 16px;
+  }
+
+  .cta-panel {
+    padding: 44px 22px;
+    border-radius: 22px;
+  }
+
+  .form,
+  .frow {
+    gap: 12px;
+  }
+  .field input,
+  .field textarea {
+    padding: 12px 14px;
+    font-size: 14.5px;
+  }
+  .cline {
+    padding: 14px 16px;
+  }
+
+  .drawer {
+    padding-top: 84px;
+  }
+  .drawer a {
+    font-size: 20px;
+    padding: 12px 4px;
+  }
+
+  .foot {
+    padding-top: clamp(40px, 9vw, 56px);
+  }
+  .foot-grid {
+    gap: 24px;
+  }
+  .foot-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
+
+/* ============================================================
+   Small mobile (<= 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  :root {
+    --pad: 16px;
+  }
+  .nav-inner {
+    gap: 10px;
+  }
+  .brand-word small {
+    display: none;
+  }
+  .burger {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    padding-top: 92px;
+  }
+  .hero-actions .btn,
+  .hero-actions .btn-lg {
+    font-size: 13.5px;
+    padding: 12px 16px;
+  }
+  .est .v {
+    font-size: 20px;
+  }
+  .stats {
+    gap: 0;
+  }
+  .stat .num {
+    font-size: 32px;
+  }
+
+  .visual-frame {
+    border-radius: 18px;
+  }
+  .play {
+    width: 42px;
+    height: 42px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+  .case-row {
+    padding-top: 12px;
+  }
+  .case-result {
+    padding: 12px 14px;
+  }
+
+  .cta-panel {
+    padding: 36px 18px;
+    border-radius: 20px;
+  }
+  .pulse {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .csocials {
+    flex-wrap: wrap;
+  }
+  .csocials a {
+    width: 42px;
+    height: 42px;
+  }
+
+  .foot-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .foot-brand {
+    grid-column: auto;
+  }
+  .foot-bottom .legal {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================================
+   Ultra-narrow (<= 360px) — keep brand legible
+   ============================================================ */
+@media (max-width: 360px) {
+  .brand-word b {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn,
+  .hero-actions .btn-lg {
+    width: 100%;
   }
 }
