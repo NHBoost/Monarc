@@ -103,6 +103,16 @@ export default function Navbar() {
       <span className="nav-progress" ref={progressRef} aria-hidden="true" />
 
       <div className="drawer" id="drawer">
+        <button
+          type="button"
+          className="drawer-close"
+          aria-label="Fermer le menu"
+          onClick={close}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        </button>
         {LINKS.map((l) => (
           <a key={l.id} href={l.href} onClick={close}>
             {l.label}

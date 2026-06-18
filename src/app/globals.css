@@ -356,6 +356,36 @@ body {
 .drawer a:active {
   color: var(--white);
 }
+.drawer-close {
+  position: absolute;
+  top: 22px;
+  right: var(--pad);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--white);
+  z-index: 1;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.drawer-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.drawer-close:hover {
+  background: rgba(155, 108, 255, 0.14);
+  border-color: var(--accent-light);
+  transform: rotate(90deg);
+}
 .drawer .drawer-cta {
   display: flex;
   gap: 12px;
