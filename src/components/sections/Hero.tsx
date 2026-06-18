@@ -66,7 +66,7 @@ export default function Hero() {
   return (
     <section className="hero wrap" id="hero" data-spy>
       <span className="eyebrow" data-reveal>
-        <span className="dot" /> Agence digitale premium
+        <span className="dot" /> Agence digitale · Bruxelles
       </span>
 
       <div className="hero-grid">
@@ -105,8 +105,8 @@ export default function Hero() {
 
         <div className="hero-right">
           <p className="lede" data-reveal>
-            MONARC est une <b>agence digitale premium</b> dédiée à la stratégie, la visibilité, l&apos;acquisition et
-            la conversion pour les entreprises ambitieuses.
+            MONARC est une <b>agence digitale basée à Bruxelles</b> dédiée à la stratégie, la visibilité,
+            l&apos;acquisition et la conversion pour les entreprises ambitieuses.
           </p>
 
           <div className="stats">

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Monarc Agency — Agence digitale premium · Stratégie & croissance";
+export const alt = "Monarc Agency — Agence digitale à Bruxelles · Stratégie & croissance";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -82,7 +82,7 @@ export default async function Image() {
               borderRadius: 999,
             }}
           >
-            Agence digitale premium
+            Agence digitale · Bruxelles
           </span>
         </div>
 
@@ -136,7 +136,7 @@ export default async function Image() {
             />
             Stratégie · Acquisition · Conversion
           </span>
-          <span style={{ color: "#7d7d82", letterSpacing: "0.2em" }}>monarc.agency</span>
+          <span style={{ color: "#7d7d82", letterSpacing: "0.2em" }}>monarc-agency.be</span>
         </div>
       </div>
     ),

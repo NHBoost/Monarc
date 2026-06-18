@@ -54,7 +54,7 @@ src/
 
 ## À adapter
 
-- `metadataBase` dans `app/layout.tsx` (actuellement `https://monarc.agency`).
+- `metadataBase` dans `app/layout.tsx` (actuellement `https://monarc-agency.be`).
 - Liens sociaux dans `Footer.tsx` et `Contact.tsx` (placeholders `#`).
 - Endpoint du formulaire de contact — actuellement front-only, brancher Formspree/Resend/route API selon ton hébergeur.
 - Source de la vidéo showreel dans `Hero.tsx` — actuellement Pexels.

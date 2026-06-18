@@ -80,7 +80,7 @@ export default function Contact() {
             <div className="frow">
               <div className="field">
                 <label htmlFor="f-phone">Téléphone</label>
-                <input id="f-phone" name="phone" type="tel" placeholder="+33 6 00 00 00 00" />
+                <input id="f-phone" name="phone" type="tel" placeholder="+32 470 00 00 00" />
               </div>
               <div className="field">
                 <label htmlFor="f-company">Entreprise</label>
@@ -112,7 +112,7 @@ export default function Contact() {
               </svg>
               <div>
                 <div className="k">Email</div>
-                <div className="v">hello@monarc.agency</div>
+                <div className="v">contact@monarc-agency.be</div>
               </div>
             </div>
             <div className="cline">
@@ -121,7 +121,7 @@ export default function Contact() {
               </svg>
               <div>
                 <div className="k">Téléphone</div>
-                <div className="v">+33 1 84 80 00 00</div>
+                <div className="v">+32 2 808 00 00</div>
               </div>
             </div>
             <div className="cline">
@@ -131,7 +131,7 @@ export default function Contact() {
               </svg>
               <div>
                 <div className="k">Adresse</div>
-                <div className="v">24 Rue de la Croissance, 75008 Paris</div>
+                <div className="v">Avenue Louise 250, 1050 Bruxelles</div>
               </div>
             </div>
             <div className="csocials">
@@ -161,9 +161,9 @@ export default function Contact() {
             </div>
             <div className="cmap">
               <iframe
-                title="MONARC Agency — Paris"
+                title="MONARC Agency — Bruxelles"
                 loading="lazy"
-                src="https://maps.google.com/maps?q=Paris%20France&z=12&output=embed"
+                src="https://maps.google.com/maps?q=Avenue%20Louise%20250%2C%201050%20Bruxelles&z=14&output=embed"
               />
             </div>
           </aside>

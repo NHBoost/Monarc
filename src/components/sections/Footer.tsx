@@ -32,9 +32,9 @@ export default function Footer() {
           </div>
           <div className="foot-col">
             <h5>Contact</h5>
-            <a href="mailto:hello@monarc.agency">hello@monarc.agency</a>
-            <a href="tel:+33184800000">+33 1 84 80 00 00</a>
-            <a href="#contact">Paris, France</a>
+            <a href="mailto:contact@monarc-agency.be">contact@monarc-agency.be</a>
+            <a href="tel:+3228080000">+32 2 808 00 00</a>
+            <a href="#contact">Bruxelles, Belgique</a>
           </div>
         </div>
         <div className="foot-bottom">

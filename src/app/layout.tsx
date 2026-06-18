@@ -23,10 +23,10 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-const SITE_URL = "https://monarc.agency";
-const TITLE = "Monarc Agency — Agence digitale premium · Stratégie & croissance";
+const SITE_URL = "https://monarc-agency.be";
+const TITLE = "Monarc Agency — Agence digitale à Bruxelles · Stratégie & croissance";
 const DESCRIPTION =
-  "Monarc Agency est l'agence digitale premium qui transforme votre visibilité en croissance : stratégie, acquisition, conversion et création de contenu pour les marques ambitieuses.";
+  "Monarc Agency est l'agence digitale basée à Bruxelles qui transforme votre visibilité en croissance : stratégie, acquisition, conversion et création de contenu pour les marques ambitieuses.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -37,14 +37,15 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   keywords: [
     "Monarc Agency",
-    "agence digitale",
-    "agence marketing digital",
+    "agence digitale Bruxelles",
+    "agence marketing digital Bruxelles",
     "stratégie digitale",
     "acquisition client",
     "Google Ads",
     "Meta Ads",
     "création de site web",
-    "Paris",
+    "Bruxelles",
+    "Belgique",
   ],
   authors: [{ name: "Monarc Agency" }],
   creator: "Monarc Agency",
